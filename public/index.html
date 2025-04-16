@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Express Vercel</title>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-full flex items-center justify-center text-center text-gray-800">
+    <div class="p-10 bg-white rounded-2xl shadow-xl max-w-md w-full">
+        <h1 class="text-3xl font-bold text-blue-600 mb-4">API Express Vercel</h1>
+        <p class="text-base text-gray-600 mb-6">Test API integration with Vercel deployment.</p>
+        <button onclick="testApi()"
+            class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">
+            Run API Test
+        </button>
+    </div>
+
+    <script type="module">
+        import { testApi } from "./index.js"
+        window.testApi = testApi
+    </script>
+</body>
+
+</html>
